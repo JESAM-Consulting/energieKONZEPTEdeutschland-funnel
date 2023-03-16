@@ -62,13 +62,13 @@ export default function Home() {
     if (dimension < 900 && step != 10 && step != 0) {
       if (step == 9) {
         window.scroll({
-          top: 130,
+          top: 105,
           left: 0,
           behavior: "smooth",
         });
       } else {
         window.scroll({
-          top: 210,
+          top: 180,
           left: 0,
           behavior: "smooth",
         });
@@ -198,8 +198,8 @@ export default function Home() {
       <Header />
       <div
         className={`grid lg:grid-cols-[70%_30%] ${step == 8
-            ? " lg:min-h-[77.5vh]"
-            : " lg:h-[77.5vh] lg:overflow-y-hidden"
+          ? " lg:min-h-[77.5vh]"
+          : " lg:h-[77.5vh] lg:overflow-y-hidden"
           } overflow-hidden`}>
         <div className="lg:px-16 lg:py-6 lg:pb-0 md:pt-10 relative ">
           <div>
@@ -323,8 +323,8 @@ export default function Home() {
         </div>
         <div
           className={`overflow-hidden lg:block hidden ${step < 10
-              ? "bg-[url('/images/house.webp')]"
-              : "bg-[url('/images/peoples.webp')]"
+            ? "bg-[url('/images/house.webp')]"
+            : "bg-[url('/images/peoples.webp')]"
             } bg-center bg-cover bg-no-repeat`}>
           <div className="relative">
             {/* <img
